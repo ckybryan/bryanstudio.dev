@@ -21,7 +21,8 @@ app.use(express.static(path.join(__dirname, 'dist'), {
 
 // For React SPA - serve index.html for all routes
 // This allows React Router to handle all routing
-app.get('*', (req, res) => {
+// Express 5 uses '/*' instead of '*' for catch-all routes
+app.get('/*', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
