@@ -150,6 +150,13 @@ export default function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <Link
+              to="/"
+              className="font-semibold transition-colors hover:text-white"
+            >
+              ← Bryan Studio
+            </Link>
+            <span>•</span>
+            <Link
               to="/petcrew/privacy"
               className="transition-colors hover:text-white"
             >

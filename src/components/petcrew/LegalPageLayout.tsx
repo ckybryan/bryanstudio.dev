@@ -60,10 +60,16 @@ export default function LegalPageLayout({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-6 flex flex-wrap justify-center gap-6">
             <Link
+              to="/"
+              className="font-medium text-gray-600 transition-colors hover:text-purple-600"
+            >
+              ← Bryan Studio
+            </Link>
+            <Link
               to="/petcrew"
               className="font-medium text-purple-600 transition-colors hover:text-purple-700"
             >
-              ← Back to PetCrew
+              PetCrew
             </Link>
             <Link
               to="/petcrew/privacy"
