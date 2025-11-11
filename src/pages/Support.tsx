@@ -6,7 +6,7 @@ export default function Support() {
     <LegalPageLayout
       title="Support & Help"
       icon="💬"
-      lastUpdated="Last Updated: February 12, 2025"
+      lastUpdated="Last Updated: November 11, 2025"
     >
       {/* Quick Links */}
       <div className="mb-8 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-sm">
