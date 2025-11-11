@@ -146,9 +146,13 @@ export default function DeveloperPortfolio() {
                 className="group block overflow-hidden rounded-3xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-lg transition-all hover:scale-105 hover:shadow-2xl md:p-12"
               >
                 <div className="flex flex-col items-center gap-8 md:flex-row">
-                  {/* App Icon Placeholder */}
-                  <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center rounded-3xl bg-gradient-to-br from-purple-600 to-pink-600 text-6xl shadow-xl">
-                    🐾
+                  {/* App Icon */}
+                  <div className="h-32 w-32 flex-shrink-0 overflow-hidden rounded-3xl shadow-xl">
+                    <img
+                      src="/petcrew/assets/icons/app-icon.png"
+                      alt="PetCrew App Icon"
+                      className="h-full w-full object-cover"
+                    />
                   </div>
 
                   {/* App Info */}
