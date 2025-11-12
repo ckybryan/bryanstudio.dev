@@ -96,43 +96,41 @@ export default function Support() {
           <AccordionItem title="Can I share my pet's data with family members?">
             <div className="prose max-w-none">
               <p className="mb-4">
-                Yes! Premium users can enable Family Sharing to collaborate on pet care:
+                Yes! Create or join a household to collaborate on pet care:
               </p>
               <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-                <li>Go to Settings → Premium Features → Family Sharing</li>
-                <li>Tap "Enable Family Sharing"</li>
+                <li>Go to Settings → Household</li>
+                <li>Tap "Create Household" or "Join Household"</li>
                 <li>Share the invite link with family members</li>
                 <li>Everyone sees real-time updates when feedings are logged</li>
               </ul>
               <div className="mt-4 rounded-lg bg-yellow-50 p-4">
                 <p className="text-sm text-yellow-800">
-                  <strong>Privacy Note:</strong> Family Sharing requires iCloud sync to be enabled.
-                  Only invited family members can access your pet data.
+                  <strong>Privacy Note:</strong> Only invited household members can access your pet data.
+                  You can leave a household anytime.
                 </p>
               </div>
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How do I enable iCloud sync?">
+          <AccordionItem title="How do I sync with family members?">
             <div className="prose max-w-none">
-              <p className="mb-4">To sync your data across all your Apple devices:</p>
+              <p className="mb-4">To sync your pet data with family members across devices:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
                 <li>Open PetCrew Settings</li>
-                <li>Tap "iCloud Sync"</li>
-                <li>Toggle "Enable iCloud Sync" to ON</li>
-                <li>Wait for initial sync to complete (may take a few moments)</li>
+                <li>Tap "Household"</li>
+                <li>Choose "Create Household" (if you're the first) or "Join Household" (if someone invited you)</li>
+                <li>Share the invite link with family members</li>
               </ol>
               <p className="mb-4">
                 <strong>Requirements:</strong>
               </p>
               <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-                <li>Signed into iCloud on your device</li>
-                <li>iCloud Drive enabled in iOS Settings</li>
                 <li>Internet connection for syncing</li>
+                <li>All members must have PetCrew installed</li>
               </ul>
               <p className="text-gray-600">
-                Your data will automatically sync across all devices signed into the same iCloud
-                account.
+                Your data will automatically sync across all household members' devices in real-time.
               </p>
             </div>
           </AccordionItem>
@@ -154,29 +152,11 @@ export default function Support() {
                 <li>Unlimited pets</li>
                 <li>Advanced analytics and insights</li>
                 <li>Family sharing</li>
-                <li>Data export (CSV/PDF)</li>
                 <li>Custom feeding schedules</li>
                 <li>Priority support</li>
               </ul>
               <p className="text-gray-600">
                 Cancel anytime in App Store Settings. No refunds for partial months.
-              </p>
-            </div>
-          </AccordionItem>
-
-          <AccordionItem title="How do I export my data?">
-            <div className="prose max-w-none">
-              <p className="mb-4">Premium users can export all pet data:</p>
-              <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Go to Settings → Data & Privacy</li>
-                <li>Tap "Export Data"</li>
-                <li>Choose export format (CSV or PDF)</li>
-                <li>Select date range (or "All Time")</li>
-                <li>Tap "Generate Export"</li>
-                <li>Share via email, save to Files, or print</li>
-              </ol>
-              <p className="text-gray-600">
-                Exports include complete feeding history, notes, photos, and all pet information.
               </p>
             </div>
           </AccordionItem>
@@ -188,12 +168,12 @@ export default function Support() {
               </p>
               <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
                 <li>Log feedings anytime, anywhere</li>
-                <li>View pet history and analytics</li>
+                <li>View pet history and statistics</li>
                 <li>Add photos and notes</li>
                 <li>Receive local notifications and reminders</li>
               </ul>
               <p className="mb-4">
-                <strong>iCloud Sync:</strong> If you have iCloud sync enabled, data will
+                <strong>Household Sharing:</strong> If you're in a household, changes will
                 automatically sync when you reconnect to the internet.
               </p>
             </div>
@@ -208,19 +188,17 @@ export default function Support() {
                 <li>All local data will be permanently deleted</li>
               </ol>
 
-              <h4 className="mb-3 font-semibold text-gray-900">Delete iCloud Data</h4>
-              <p className="mb-4">If you have iCloud sync enabled:</p>
+              <h4 className="mb-3 font-semibold text-gray-900">Leave a Household</h4>
+              <p className="mb-4">If you're in a household:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
                 <li>Open PetCrew Settings</li>
-                <li>Go to iCloud Sync</li>
-                <li>Tap "Manage iCloud Storage"</li>
-                <li>Tap "Delete iCloud Data"</li>
-                <li>Confirm deletion</li>
+                <li>Go to Household</li>
+                <li>Tap "Leave Household"</li>
+                <li>Confirm - your data will remain local on your device</li>
               </ol>
               <div className="mt-4 rounded-lg bg-red-50 p-4">
                 <p className="text-sm text-red-800">
-                  <strong>Warning:</strong> Data deletion is permanent and cannot be undone. Make
-                  sure to export your data first if needed.
+                  <strong>Warning:</strong> Uninstalling the app permanently deletes all local data and cannot be undone.
                 </p>
               </div>
             </div>
@@ -250,8 +228,7 @@ export default function Support() {
                   <strong>Update iOS:</strong> Go to Settings → General → Software Update
                 </li>
                 <li>
-                  <strong>Reinstall:</strong> Delete app and reinstall from App Store (your data
-                  is safe in iCloud if sync is enabled)
+                  <strong>Reinstall:</strong> Delete app and reinstall from App Store (note: this will delete local data unless you're in a household)
                 </li>
               </ol>
               <p className="text-gray-600">
@@ -261,21 +238,20 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="iCloud sync not working">
+          <AccordionItem title="Household sync not working">
             <div className="prose max-w-none">
-              <p className="mb-4">If your data isn't syncing across devices:</p>
+              <p className="mb-4">If your data isn't syncing with household members:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Verify you're signed into the same iCloud account on all devices</li>
-                <li>Check that iCloud Drive is enabled (Settings → [Your Name] → iCloud)</li>
-                <li>Ensure you have available iCloud storage space</li>
-                <li>Check internet connection on both devices</li>
-                <li>Toggle iCloud sync OFF then ON in PetCrew settings</li>
-                <li>Wait 5-10 minutes for sync to complete</li>
+                <li>Verify all members are in the same household</li>
+                <li>Check internet connection on all devices</li>
+                <li>Make sure all members have the latest version of PetCrew</li>
+                <li>Try leaving and rejoining the household</li>
+                <li>Wait a few moments for sync to complete</li>
               </ol>
               <div className="mt-4 rounded-lg bg-blue-50 p-4">
                 <p className="text-sm text-blue-800">
-                  <strong>Tip:</strong> Large photo libraries may take longer to sync. Check sync
-                  status in Settings → iCloud Sync.
+                  <strong>Tip:</strong> Sync happens in real-time when you have an internet connection.
+                  Check household status in Settings → Household.
                 </p>
               </div>
             </div>
@@ -307,10 +283,6 @@ export default function Support() {
                 </li>
                 <li>
                   <strong>Storage issues:</strong> Ensure your device has available storage space
-                </li>
-                <li>
-                  <strong>iCloud Photos:</strong> If using iCloud sync, wait for photos to
-                  download from iCloud
                 </li>
                 <li>
                   <strong>Re-add photos:</strong> Edit pet profile and add photos again

@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
-            <span>iCloud sync is optional and fully encrypted</span>
+            <span>Optional household sharing syncs data across your family's devices</span>
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
-            <span>Basic analytics help us improve the app (you can opt out)</span>
+            <span>No analytics, no tracking - completely private</span>
           </li>
         </ul>
       </div>
@@ -64,52 +64,46 @@ export default function PrivacyPolicy() {
             <h4 className="mb-3 font-semibold text-gray-900">Data You Create</h4>
             <p className="mb-4">
               All pet care information (feeding times, photos, notes, etc.) is stored locally on
-              your device. This data never leaves your device unless you choose to enable iCloud
-              sync.
-            </p>
-
-            <h4 className="mb-3 font-semibold text-gray-900">Analytics Data</h4>
-            <p className="mb-4">
-              We collect minimal, anonymized usage data to help improve PetCrew:
-            </p>
-            <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-              <li>App version and device type (e.g., "iPhone 13, iOS 17.2")</li>
-              <li>Feature usage patterns (e.g., "feeding log viewed")</li>
-              <li>Crash reports and error logs</li>
-              <li>General location (country/region only, no precise location)</li>
-            </ul>
-            <p className="mb-4">
-              <strong>Important:</strong> This data is completely anonymous and cannot be linked to
-              you or your pets.
+              your device. This data never leaves your device unless you choose to create or join
+              a household for family sharing.
             </p>
 
             <h4 className="mb-3 font-semibold text-gray-900">What We Don't Collect</h4>
+            <p className="mb-4">
+              <strong>We do not collect any analytics, usage data, or telemetry.</strong> PetCrew is completely private:
+            </p>
             <ul className="list-inside list-disc space-y-2 text-gray-600">
-              <li>Personal identification information (name, email, phone)</li>
-              <li>Pet names or photos (unless you choose to sync via iCloud)</li>
-              <li>Precise location data</li>
-              <li>Contacts or other device data</li>
-              <li>Payment information (if using free version)</li>
+              <li>No usage tracking or behavior analytics</li>
+              <li>No crash reports or error logs sent to servers</li>
+              <li>No personal identification information (name, email, phone)</li>
+              <li>No location data of any kind</li>
+              <li>No contacts or other device data</li>
+              <li>No advertising identifiers or tracking cookies</li>
             </ul>
+            <div className="mt-4 rounded-lg bg-green-50 p-4">
+              <p className="text-sm text-green-800">
+                <strong>Privacy First:</strong> Your pet care data stays on your device. We never see it, track it, or analyze it.
+              </p>
+            </div>
           </div>
         </AccordionItem>
 
-        <AccordionItem title="iCloud Sync">
+        <AccordionItem title="Household Sharing">
           <div className="prose max-w-none">
             <p className="mb-4">
-              PetCrew offers optional iCloud sync to backup your data and sync across your Apple
-              devices. When enabled:
+              PetCrew offers optional household sharing to sync pet care data with family members
+              across devices. When you create or join a household:
             </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-              <li>Your pet care data is encrypted and stored in your personal iCloud account</li>
-              <li>We never have access to your iCloud data - it's controlled by Apple</li>
-              <li>Data sync is governed by Apple's privacy policy and terms</li>
-              <li>You can disable iCloud sync anytime in the app settings</li>
+              <li>Your pet data syncs across all household members' devices</li>
+              <li>Data is stored securely in our database with encryption</li>
+              <li>Only household members you invite can access your pet information</li>
+              <li>You can leave a household anytime in the app settings</li>
             </ul>
             <div className="mt-4 rounded-lg bg-blue-50 p-4">
               <p className="text-sm text-blue-800">
-                <strong>Note:</strong> iCloud sync is entirely optional. PetCrew works perfectly
-                without it, storing all data locally on your device.
+                <strong>Note:</strong> Household sharing is entirely optional. PetCrew works perfectly
+                in local mode, storing all data privately on your device.
               </p>
             </div>
           </div>
@@ -117,26 +111,22 @@ export default function PrivacyPolicy() {
 
         <AccordionItem title="How We Use Information">
           <div className="prose max-w-none">
-            <p className="mb-4">The limited data we collect is used solely to:</p>
+            <p className="mb-4">
+              <strong>We don't collect any personal data or analytics.</strong> Your information is only used as follows:
+            </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>
-                <strong>Improve app performance:</strong> Identify and fix bugs, crashes, and
-                performance issues
+                <strong>Pet care data:</strong> Stored locally on your device or synced within your household (if you enable sharing)
               </li>
               <li>
-                <strong>Enhance features:</strong> Understand which features are most valuable to
-                prioritize development
+                <strong>Household sharing:</strong> When enabled, pet data is shared only with household members you invite
               </li>
               <li>
-                <strong>Ensure compatibility:</strong> Test new iOS versions and device models
-              </li>
-              <li>
-                <strong>Provide support:</strong> Help troubleshoot issues when you contact us
+                <strong>Support requests:</strong> Information you provide when contacting us is used only to help resolve your issue
               </li>
             </ul>
             <p className="font-semibold text-gray-900">
-              We never use your data for advertising, marketing, or any purpose beyond improving
-              PetCrew.
+              We never use your data for advertising, marketing, analytics, or tracking.
             </p>
           </div>
         </AccordionItem>
@@ -150,49 +140,27 @@ export default function PrivacyPolicy() {
 
             <h4 className="mb-3 font-semibold text-gray-900">Service Providers</h4>
             <p className="mb-4">
-              We use trusted third-party services to help operate PetCrew. These services may
-              receive anonymized analytics data:
+              When you use household sharing, your pet data is stored in our secure database to enable
+              multi-device sync. We use:
             </p>
 
-            <div className="mb-6 overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 rounded-lg border border-gray-200">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-                      Service
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-                      Purpose
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
-                      Data Type
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 bg-white">
-                  <tr>
-                    <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
-                      Apple Analytics
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-600">App performance & crashes</td>
-                    <td className="px-6 py-4 text-sm text-gray-600">Device type, iOS version</td>
-                  </tr>
-                  <tr>
-                    <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
-                      iCloud
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-600">
-                      Optional data sync & backup
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-600">
-                      Encrypted pet care data
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <ul className="mb-6 list-inside list-disc space-y-2 text-gray-600">
+              <li>
+                <strong>Database hosting:</strong> Secure cloud infrastructure for household data sync
+              </li>
+              <li>
+                <strong>App Store (Apple):</strong> For app distribution and in-app purchases
+              </li>
+            </ul>
+
+            <div className="mt-4 rounded-lg bg-purple-50 p-4">
+              <p className="text-sm text-purple-800">
+                <strong>Important:</strong> We do not use any analytics services, tracking tools, or advertising platforms.
+                Your data is never shared with data brokers or third-party analytics companies.
+              </p>
             </div>
 
-            <h4 className="mb-3 font-semibold text-gray-900">Legal Requirements</h4>
+            <h4 className="mt-6 mb-3 font-semibold text-gray-900">Legal Requirements</h4>
             <p>
               We may disclose information if required by law, such as to comply with a subpoena or
               similar legal process, or to protect the rights, property, or safety of PetCrew, our
@@ -209,7 +177,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>All data on your device is protected by iOS security features</li>
-              <li>iCloud sync uses end-to-end encryption</li>
+              <li>Household data is encrypted in transit and at rest</li>
               <li>We use secure HTTPS connections for all network communications</li>
               <li>Regular security audits and updates</li>
             </ul>
@@ -235,24 +203,14 @@ export default function PrivacyPolicy() {
                 <strong>Edit:</strong> Modify or delete any pet care records directly in the app
               </li>
               <li>
-                <strong>Export:</strong> Premium users can export all data as CSV or PDF
-              </li>
-              <li>
                 <strong>Delete:</strong> Uninstalling the app removes all local data immediately
               </li>
             </ul>
 
-            <h4 className="mb-3 font-semibold text-gray-900">Analytics Opt-Out</h4>
-            <p className="mb-4">
-              To disable analytics collection, go to Settings → Privacy → Analytics and toggle off
-              "Share Analytics Data".
-            </p>
-
-            <h4 className="mb-3 font-semibold text-gray-900">iCloud Sync</h4>
+            <h4 className="mb-3 font-semibold text-gray-900">Household Sharing</h4>
             <p>
-              Disable iCloud sync anytime in Settings → iCloud Sync. Note that disabling sync will
-              stop syncing new data but won't delete existing iCloud data. To delete iCloud data,
-              use Settings → Manage Storage → Delete iCloud Data.
+              Leave a household anytime in Settings → Household. When you leave, your device will
+              stop syncing with other household members, and your data will remain local on your device.
             </p>
           </div>
         </AccordionItem>

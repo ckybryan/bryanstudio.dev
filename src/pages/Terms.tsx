@@ -86,8 +86,7 @@ export default function Terms() {
               <li>Track feeding schedules for your pets</li>
               <li>Log pet care activities and health information</li>
               <li>Set reminders and notifications</li>
-              <li>Share pet care data with family members (Premium feature)</li>
-              <li>Export your data for personal record-keeping</li>
+              <li>Share pet care data with family members via household sharing</li>
             </ul>
 
             <h4 className="mb-3 font-semibold text-gray-900">Prohibited Uses</h4>
@@ -114,7 +113,6 @@ export default function Terms() {
               <li>Unlimited pets (free version limited to 3)</li>
               <li>Advanced analytics and insights</li>
               <li>Family sharing for collaborative pet care</li>
-              <li>Data export as CSV/PDF</li>
               <li>Custom feeding schedules</li>
               <li>Priority support</li>
             </ul>
@@ -186,9 +184,9 @@ export default function Terms() {
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>No account required - no personal data collection</li>
               <li>All pet care data stored locally on your device</li>
-              <li>Optional iCloud sync is fully encrypted</li>
+              <li>Optional household sharing syncs data across family devices</li>
               <li>We never sell, rent, or share your information</li>
-              <li>Minimal analytics collected (opt-out available)</li>
+              <li>No analytics, no tracking - completely private</li>
             </ul>
           </div>
         </AccordionItem>
