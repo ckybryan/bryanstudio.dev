@@ -369,6 +369,73 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
+        <AccordionItem title="Apple-Specific Terms">
+          <div className="prose max-w-none">
+            <p className="mb-4">
+              The following terms apply to users who download PetCrew from the Apple App Store:
+            </p>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Agreement with Developer</h4>
+            <p className="mb-4">
+              These Terms are concluded between you and PetCrew only, and not with Apple Inc.
+              ("Apple"). PetCrew, not Apple, is solely responsible for the App and its content.
+            </p>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Maintenance and Support</h4>
+            <p className="mb-4">
+              PetCrew, not Apple, is responsible for providing maintenance and support services
+              for the App. You may contact us at{' '}
+              <a href="mailto:bryanstudio.dev@gmail.com" className="text-purple-600 hover:text-purple-700">
+                bryanstudio.dev@gmail.com
+              </a>{' '}
+              for support. Apple has no obligation to provide maintenance or support for PetCrew.
+            </p>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Product Claims</h4>
+            <p className="mb-4">
+              PetCrew, not Apple, is responsible for addressing any claims relating to the App, including:
+            </p>
+            <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
+              <li>Product liability claims</li>
+              <li>Claims that the App fails to conform to legal or regulatory requirements</li>
+              <li>Claims arising under consumer protection, privacy, or similar legislation</li>
+            </ul>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Intellectual Property Claims</h4>
+            <p className="mb-4">
+              In the event of any third party claim that PetCrew or your use of the App infringes
+              that third party's intellectual property rights, PetCrew, not Apple, will be solely
+              responsible for the investigation, defense, settlement, and discharge of any such claim.
+            </p>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Third Party Beneficiary</h4>
+            <p className="mb-4">
+              You acknowledge and agree that Apple and its subsidiaries are third-party beneficiaries
+              of these Terms. Upon your acceptance of these Terms, Apple will have the right (and will
+              be deemed to have accepted the right) to enforce these Terms against you as a third-party
+              beneficiary.
+            </p>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Third Party Terms of Agreement</h4>
+            <p className="mb-4">
+              You must comply with applicable third-party terms of agreement when using PetCrew,
+              including but not limited to:
+            </p>
+            <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
+              <li>Your wireless data service agreement</li>
+              <li>Apple's App Store Terms of Service</li>
+              <li>Any other applicable third-party agreements</li>
+            </ul>
+
+            <h4 className="mb-3 font-semibold text-gray-900">Warranty and Liability Exclusion</h4>
+            <p className="mb-4">
+              Apple has no warranty obligation whatsoever with respect to PetCrew. Any claims,
+              losses, liabilities, damages, costs, or expenses attributable to any failure of the
+              App to conform to any warranty will be PetCrew's sole responsibility.
+            </p>
+          </div>
+        </AccordionItem>
+
         <AccordionItem title="Contact Information">
           <div className="prose max-w-none">
             <p className="mb-4">
