@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Information We Collect">
+        <AccordionItem title="Information We Collect" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Data You Create</h4>
             <p className="mb-4">
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Household Sharing">
+        <AccordionItem title="Household Sharing" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               PetCrew offers optional household sharing to sync pet care data with family members
@@ -109,7 +109,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="How We Use Information">
+        <AccordionItem title="How We Use Information" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               <strong>We don't collect any personal data or analytics.</strong> Your information is only used as follows:
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Data Sharing & Third Parties">
+        <AccordionItem title="Data Sharing & Third Parties" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               We do not sell, rent, or share your personal information with third parties for
@@ -169,7 +169,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Data Security">
+        <AccordionItem title="Data Security" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               We take data security seriously and implement industry-standard measures to protect
@@ -191,7 +191,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Your Rights & Choices">
+        <AccordionItem title="Your Rights & Choices" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Data Control</h4>
             <p className="mb-4">You have complete control over your data:</p>
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Children's Privacy">
+        <AccordionItem title="Children's Privacy" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               PetCrew is designed for pet owners of all ages. We do not knowingly collect personal
@@ -236,7 +236,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="International Users">
+        <AccordionItem title="International Users" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               PetCrew is available worldwide. If you use PetCrew outside the United States, your
@@ -253,7 +253,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Changes to This Policy">
+        <AccordionItem title="Changes to This Policy" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               We may update this Privacy Policy from time to time to reflect changes in our
@@ -272,7 +272,7 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Contact Us">
+        <AccordionItem title="Contact Us" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               We value your privacy and welcome any questions or concerns. Please reach out:

@@ -57,7 +57,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Eligibility">
+        <AccordionItem title="Eligibility" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               PetCrew is available to users of all ages. However, if you are under 13 years old, you
@@ -73,7 +73,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="License & App Use">
+        <AccordionItem title="License & App Use" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">License Grant</h4>
             <p className="mb-4">
@@ -103,7 +103,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Premium Subscription">
+        <AccordionItem title="Premium Subscription" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Subscription Details</h4>
             <p className="mb-4">
@@ -149,7 +149,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Intellectual Property">
+        <AccordionItem title="Intellectual Property" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Our Content</h4>
             <p className="mb-4">
@@ -171,7 +171,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Privacy & Data">
+        <AccordionItem title="Privacy & Data" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               Your privacy is extremely important to us. Please review our{' '}
@@ -191,7 +191,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Disclaimers & Warranties">
+        <AccordionItem title="Disclaimers & Warranties" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">"As Is" Service</h4>
             <p className="mb-4">
@@ -222,7 +222,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Limitation of Liability">
+        <AccordionItem title="Limitation of Liability" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               TO THE MAXIMUM EXTENT PERMITTED BY LAW, PETCREW AND ITS AFFILIATES, OFFICERS,
@@ -252,7 +252,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Indemnification">
+        <AccordionItem title="Indemnification" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               You agree to indemnify, defend, and hold harmless PetCrew and its affiliates from any
@@ -267,7 +267,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Changes to Services">
+        <AccordionItem title="Changes to Services" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">We reserve the right to:</p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
@@ -283,7 +283,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Termination">
+        <AccordionItem title="Termination" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Your Right to Terminate</h4>
             <p className="mb-4">
@@ -306,7 +306,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Dispute Resolution">
+        <AccordionItem title="Dispute Resolution" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Informal Resolution</h4>
             <p className="mb-4">
@@ -341,7 +341,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="General Provisions">
+        <AccordionItem title="General Provisions" defaultOpen>
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Governing Law</h4>
             <p className="mb-4">
@@ -369,7 +369,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Apple-Specific Terms">
+        <AccordionItem title="Apple-Specific Terms" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               The following terms apply to users who download PetCrew from the Apple App Store:
@@ -436,7 +436,7 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Contact Information">
+        <AccordionItem title="Contact Information" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
               If you have questions about these Terms, please contact us:

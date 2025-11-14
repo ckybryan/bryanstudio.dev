@@ -67,7 +67,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How does feeding tracking work?">
+          <AccordionItem title="How does feeding tracking work?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">PetCrew makes feeding tracking simple and automatic:</p>
               <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
@@ -93,7 +93,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Can I share my pet's data with family members?">
+          <AccordionItem title="Can I share my pet's data with family members?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">
                 Yes! Create or join a household to collaborate on pet care:
@@ -113,7 +113,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How do I sync with family members?">
+          <AccordionItem title="How do I sync with family members?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">To sync your pet data with family members across devices:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
@@ -135,7 +135,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How do I upgrade to Premium?">
+          <AccordionItem title="How do I upgrade to Premium?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">Upgrade to Premium for just $1.99/month:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
@@ -161,7 +161,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Can I use PetCrew offline?">
+          <AccordionItem title="Can I use PetCrew offline?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">
                 Yes! PetCrew works completely offline since all data is stored on your device:
@@ -179,7 +179,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How do I delete my data?">
+          <AccordionItem title="How do I delete my data?" defaultOpen>
             <div className="prose max-w-none">
               <h4 className="mb-3 font-semibold text-gray-900">Delete Local Data</h4>
               <p className="mb-4">To delete data from your device:</p>
@@ -210,7 +210,7 @@ export default function Support() {
       <div className="mb-8">
         <h2 className="mb-6 text-2xl font-bold text-gray-900">Troubleshooting</h2>
         <Accordion>
-          <AccordionItem title="App crashes or freezes">
+          <AccordionItem title="App crashes or freezes" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">If PetCrew is crashing or freezing, try these steps:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
@@ -238,7 +238,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Household sync not working">
+          <AccordionItem title="Household sync not working" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">If your data isn't syncing with household members:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
@@ -257,7 +257,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Notifications not working">
+          <AccordionItem title="Notifications not working" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">If you're not receiving feeding reminders:</p>
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
@@ -273,7 +273,7 @@ export default function Support() {
             </div>
           </AccordionItem>
 
-          <AccordionItem title="Photos not loading or missing">
+          <AccordionItem title="Photos not loading or missing" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">If pet photos aren't displaying:</p>
               <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
