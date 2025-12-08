@@ -1422,7 +1422,7 @@
             right: 0;
             bottom: 0;
             background: var(--light);
-            z-index: 999;
+            z-index: 1001;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1453,11 +1453,23 @@
 
         .mobile-menu-close {
             position: absolute;
-            top: 30px;
-            right: 30px;
-            font-size: 2rem;
+            top: 24px;
+            right: 24px;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
             color: var(--text-dark);
             cursor: pointer;
+            background: var(--snow);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-close:hover {
+            background: var(--border);
         }
 
         /* ===== SCROLL TO TOP ===== */
@@ -1533,6 +1545,12 @@
         }
 
         @media (max-width: 768px) {
+            /* Container Spacing */
+            .container {
+                padding: 0 20px;
+            }
+
+            /* Navigation */
             .nav-links {
                 display: none;
             }
@@ -1545,6 +1563,112 @@
                 display: none;
             }
 
+            .nav-cta .btn {
+                display: none;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            /* Section Spacing */
+            .about-section,
+            .features,
+            .programs,
+            .pricing,
+            .instructors,
+            .testimonials,
+            .faq,
+            .locations,
+            .resources,
+            .cta {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 40px;
+            }
+
+            .section-title {
+                font-size: clamp(1.75rem, 5vw, 2.5rem);
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            /* Hero Section */
+            .hero {
+                min-height: auto;
+                padding: 100px 0 60px;
+            }
+
+            .hero-content {
+                gap: 40px;
+                padding-top: 0;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 8vw, 2.75rem);
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                gap: 12px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-trust {
+                gap: 12px;
+            }
+
+            .trust-badge {
+                font-size: 12px;
+                padding: 10px 14px;
+            }
+
+            .hero-image-wrapper {
+                padding: 24px;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .hero-stat-number {
+                font-size: 1.5rem;
+            }
+
+            /* Certification Bar */
+            .cert-bar-inner {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .cert-badge-img {
+                height: 50px;
+            }
+
+            /* About Section */
+            .about-text h2 {
+                font-size: 1.75rem;
+            }
+
+            .about-text p {
+                font-size: 1rem;
+            }
+
+            /* Grid Layouts */
             .features-grid,
             .programs-grid,
             .instructors-grid,
@@ -1553,13 +1677,41 @@
                 grid-template-columns: 1fr;
             }
 
-            .cert-bar-inner {
-                flex-direction: column;
-                gap: 16px;
+            /* Feature Cards */
+            .feature-card {
+                padding: 28px 20px;
             }
 
-            .hero-stats {
-                grid-template-columns: 1fr;
+            /* Program Cards */
+            .program-content {
+                padding: 24px;
+            }
+
+            .program-card h3 {
+                font-size: 1.3rem;
+            }
+
+            /* Pricing Cards */
+            .pricing-card {
+                padding: 32px 24px;
+            }
+
+            .pricing-amount .price {
+                font-size: 2.5rem;
+            }
+
+            /* CTA Section */
+            .cta h2 {
+                font-size: clamp(1.75rem, 5vw, 2.5rem);
+            }
+
+            .cta p {
+                font-size: 1.05rem;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 60px 0 30px;
             }
 
             .footer-grid {
@@ -1571,6 +1723,249 @@
                 flex-direction: column;
                 gap: 20px;
                 text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            /* Extra small mobile devices */
+            .container {
+                padding: 0 16px;
+            }
+
+            /* Typography */
+            .section-title {
+                font-size: clamp(1.5rem, 7vw, 2rem);
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+
+            .section-tag {
+                font-size: 11px;
+                padding: 6px 14px;
+            }
+
+            /* Section Spacing */
+            .about-section,
+            .features,
+            .programs,
+            .pricing,
+            .instructors,
+            .testimonials,
+            .faq,
+            .locations,
+            .resources,
+            .cta {
+                padding: 50px 0;
+            }
+
+            .section-header {
+                margin-bottom: 32px;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding: 90px 0 50px;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.75rem, 9vw, 2.25rem);
+                margin-bottom: 20px;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+                margin-bottom: 24px;
+            }
+
+            .hero-badge {
+                font-size: 12px;
+                padding: 8px 16px;
+            }
+
+            .hero-buttons {
+                gap: 10px;
+            }
+
+            .hero-buttons .btn {
+                padding: 14px 24px;
+                font-size: 13px;
+            }
+
+            .hero-trust {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .trust-badge {
+                justify-content: center;
+            }
+
+            .hero-image-wrapper {
+                padding: 20px;
+            }
+
+            /* About Features */
+            .about-features {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .about-feature {
+                justify-content: center;
+            }
+
+            /* Feature Cards */
+            .feature-card {
+                padding: 24px 20px;
+            }
+
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.75rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1rem;
+            }
+
+            .feature-card p {
+                font-size: 0.9rem;
+            }
+
+            /* Pricing Cards */
+            .pricing-card {
+                padding: 28px 20px;
+            }
+
+            .pricing-icon {
+                font-size: 2.5rem;
+            }
+
+            .pricing-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .pricing-amount .price {
+                font-size: 2.25rem;
+            }
+
+            .pricing-features {
+                font-size: 13px;
+            }
+
+            /* Instructor Cards */
+            .instructor-info {
+                padding: 20px;
+            }
+
+            /* Testimonial Cards */
+            .testimonial-card {
+                padding: 24px 20px;
+            }
+
+            .testimonial-text {
+                font-size: 0.95rem;
+            }
+
+            /* Location Cards */
+            .location-info {
+                padding: 20px;
+            }
+
+            .location-info h4 {
+                font-size: 1.1rem;
+            }
+
+            /* Resource Cards */
+            .resource-card {
+                padding: 24px 20px;
+            }
+
+            .resource-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.6rem;
+            }
+
+            .resource-card h4 {
+                font-size: 0.95rem;
+            }
+
+            .resource-card p {
+                font-size: 12px;
+            }
+
+            /* FAQ */
+            .faq-question {
+                padding: 16px 20px;
+                font-size: 14px;
+            }
+
+            .faq-answer {
+                padding: 0 20px;
+            }
+
+            .faq-answer p {
+                font-size: 13px;
+            }
+
+            /* CTA */
+            .cta {
+                padding: 60px 0;
+            }
+
+            .cta h2 {
+                font-size: clamp(1.5rem, 7vw, 2rem);
+            }
+
+            .cta p {
+                font-size: 1rem;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 50px 0 24px;
+            }
+
+            .footer-grid {
+                gap: 32px;
+            }
+
+            .footer-brand p {
+                font-size: 14px;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            .footer-badges {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            /* Buttons */
+            .btn {
+                padding: 14px 24px;
+                font-size: 13px;
+            }
+
+            /* Scroll to Top */
+            .scroll-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            /* Mobile Menu */
+            .mobile-menu a {
+                font-size: 1.3rem;
             }
         }
     </style>
