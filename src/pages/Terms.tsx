@@ -6,7 +6,7 @@ export default function Terms() {
     <LegalPageLayout
       title="Terms of Service"
       icon="📜"
-      lastUpdated="Last Updated: November 11, 2025"
+      lastUpdated={`Last Updated: March ${new Date().getFullYear()}`}
     >
       {/* TL;DR Summary */}
       <div className="mb-8 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-sm">
@@ -14,7 +14,7 @@ export default function Terms() {
         <ul className="space-y-3 text-gray-700">
           <li className="flex items-start">
             <span className="mr-3 text-xl">📱</span>
-            <span>PetCrew is free to use with optional premium features</span>
+            <span>PetCrew is completely free to use with no in-app purchases</span>
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
@@ -86,7 +86,7 @@ export default function Terms() {
               <li>Track feeding schedules for your pets</li>
               <li>Log pet care activities and health information</li>
               <li>Set reminders and notifications</li>
-              <li>Share pet care data with family members via household sharing</li>
+              <li>Add local members to track who fed the pet</li>
             </ul>
 
             <h4 className="mb-3 font-semibold text-gray-900">Prohibited Uses</h4>
@@ -103,48 +103,24 @@ export default function Terms() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Premium Subscription" defaultOpen>
+        <AccordionItem title="App Features" defaultOpen>
           <div className="prose max-w-none">
-            <h4 className="mb-3 font-semibold text-gray-900">Subscription Details</h4>
             <p className="mb-4">
-              PetCrew offers an optional Premium subscription for $1.99/month with enhanced features:
+              All PetCrew features are completely free with no limits. There are no subscriptions,
+              no in-app purchases, and no premium tiers.
             </p>
+            <p className="mb-4">Features available to all users include:</p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-              <li>Unlimited pets (free version limited to 3)</li>
-              <li>Advanced analytics and insights</li>
-              <li>Family sharing for collaborative pet care</li>
-              <li>Custom feeding schedules</li>
-              <li>Priority support</li>
+              <li>Unlimited pets and unlimited feeding history</li>
+              <li>All iOS widget sizes (small and medium)</li>
+              <li>Feeding insights, streaks, and analytics</li>
+              <li>Smart reminders with quiet hours</li>
+              <li>Local member tracking</li>
+              <li>Dark mode</li>
             </ul>
-
-            <h4 className="mb-3 font-semibold text-gray-900">Billing</h4>
-            <p className="mb-4">
-              Subscriptions are billed monthly through Apple's App Store. Payment will be charged to
-              your Apple ID at confirmation of purchase.
-            </p>
-            <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-              <li>
-                <strong>Auto-Renewal:</strong> Subscriptions automatically renew unless canceled at
-                least 24 hours before the current period ends
-              </li>
-              <li>
-                <strong>Renewal Charge:</strong> Your account will be charged within 24 hours prior
-                to the end of the current period
-              </li>
-              <li>
-                <strong>Managing Subscription:</strong> Cancel or manage your subscription in App
-                Store Settings
-              </li>
-            </ul>
-
-            <h4 className="mb-3 font-semibold text-gray-900">Cancellation & Refunds</h4>
-            <p className="mb-4">
-              You can cancel your subscription at any time through your App Store settings.
-              Cancellation takes effect at the end of the current billing period.
-            </p>
             <p>
-              <strong>Refund Policy:</strong> All purchases are subject to Apple's refund policy.
-              Contact Apple Support for refund requests. We do not process refunds directly.
+              PetCrew is and will remain a free app. We do not collect payment information
+              or process any transactions.
             </p>
           </div>
         </AccordionItem>
@@ -165,7 +141,7 @@ export default function Terms() {
               etc.). We don't claim ownership of your data.
             </p>
             <p className="mb-4">
-              Since all data is stored locally on your device (or your personal iCloud), we never
+              Since all data is stored locally on your device, we never
               access, view, or use your content for any purpose.
             </p>
           </div>
@@ -184,7 +160,7 @@ export default function Terms() {
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>No account required - no personal data collection</li>
               <li>All pet care data stored locally on your device</li>
-              <li>Optional household sharing syncs data across family devices</li>
+              <li>Local member tracking lets you coordinate feeding without accounts</li>
               <li>We never sell, rent, or share your information</li>
               <li>No analytics, no tracking - completely private</li>
             </ul>
@@ -272,7 +248,7 @@ export default function Terms() {
             <p className="mb-4">We reserve the right to:</p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>Modify, suspend, or discontinue any part of the Services</li>
-              <li>Change features, functionality, or pricing</li>
+              <li>Change features or functionality</li>
               <li>Impose usage limits or restrictions</li>
               <li>Update these Terms at any time</li>
             </ul>
@@ -287,8 +263,8 @@ export default function Terms() {
           <div className="prose max-w-none">
             <h4 className="mb-3 font-semibold text-gray-900">Your Right to Terminate</h4>
             <p className="mb-4">
-              You may stop using PetCrew at any time by uninstalling the App. To delete your data,
-              uninstall the App and delete iCloud backup if enabled.
+              You may stop using PetCrew at any time by uninstalling the App. Uninstalling
+              permanently deletes all app data from your device.
             </p>
 
             <h4 className="mb-3 font-semibold text-gray-900">Our Right to Terminate</h4>

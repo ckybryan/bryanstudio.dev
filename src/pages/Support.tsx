@@ -6,7 +6,7 @@ export default function Support() {
     <LegalPageLayout
       title="Support & Help"
       icon="💬"
-      lastUpdated="Last Updated: November 11, 2025"
+      lastUpdated={`Last Updated: March ${new Date().getFullYear()}`}
     >
       {/* Quick Links */}
       <div className="mb-8 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-sm">
@@ -60,8 +60,7 @@ export default function Support() {
               </ol>
               <div className="mt-4 rounded-lg bg-blue-50 p-4">
                 <p className="text-sm text-blue-800">
-                  <strong>Note:</strong> Free users can add up to 2 pets. Upgrade to Premium for
-                  unlimited pets!
+                  <strong>Tip:</strong> You can add unlimited pets to PetCrew.
                 </p>
               </div>
             </div>
@@ -88,7 +87,7 @@ export default function Support() {
                 </li>
               </ul>
               <p className="text-gray-600">
-                All feeding data is stored locally on your device and syncs via iCloud if enabled.
+                All feeding data is stored locally on your device.
               </p>
             </div>
           </AccordionItem>
@@ -96,67 +95,19 @@ export default function Support() {
           <AccordionItem title="Can I share my pet's data with family members?" defaultOpen>
             <div className="prose max-w-none">
               <p className="mb-4">
-                Yes! Create or join a household to collaborate on pet care:
-              </p>
-              <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-                <li>Go to Settings → Household</li>
-                <li>Tap "Create Household" or "Join Household"</li>
-                <li>Share the invite link with family members</li>
-                <li>Everyone sees real-time updates when feedings are logged</li>
-              </ul>
-              <div className="mt-4 rounded-lg bg-yellow-50 p-4">
-                <p className="text-sm text-yellow-800">
-                  <strong>Privacy Note:</strong> Only invited household members can access your pet data.
-                  You can leave a household anytime.
-                </p>
-              </div>
-            </div>
-          </AccordionItem>
-
-          <AccordionItem title="How do I sync with family members?" defaultOpen>
-            <div className="prose max-w-none">
-              <p className="mb-4">To sync your pet data with family members across devices:</p>
-              <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Open PetCrew Settings</li>
-                <li>Tap "Household"</li>
-                <li>Choose "Create Household" (if you're the first) or "Join Household" (if someone invited you)</li>
-                <li>Share the invite link with family members</li>
-              </ol>
-              <p className="mb-4">
-                <strong>Requirements:</strong>
-              </p>
-              <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-                <li>Internet connection for syncing</li>
-                <li>All members must have PetCrew installed</li>
-              </ul>
-              <p className="text-gray-600">
-                Your data will automatically sync across all household members' devices in real-time.
+                Yes! Add family members as local members in PetCrew. Go to the Members tab and tap
+                "Add Member". Enter their name and they'll appear as an option when logging feedings.
+                No one else needs to download the app or create an account.
               </p>
             </div>
           </AccordionItem>
 
-          <AccordionItem title="How do I upgrade to Premium?" defaultOpen>
+          <AccordionItem title="How do I coordinate feeding with family members?" defaultOpen>
             <div className="prose max-w-none">
-              <p className="mb-4">Upgrade to Premium for just $1.99/month:</p>
-              <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Open PetCrew and go to Settings</li>
-                <li>Tap "Premium Features" or "Upgrade to Premium"</li>
-                <li>Review premium features and pricing</li>
-                <li>Tap "Subscribe" to proceed</li>
-                <li>Confirm purchase with Face ID, Touch ID, or password</li>
-              </ol>
               <p className="mb-4">
-                <strong>Premium Features Include:</strong>
-              </p>
-              <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-                <li>Unlimited pets</li>
-                <li>Advanced analytics and insights</li>
-                <li>Family sharing</li>
-                <li>Custom feeding schedules</li>
-                <li>Priority support</li>
-              </ul>
-              <p className="text-gray-600">
-                Cancel anytime in App Store Settings. No refunds for partial months.
+                PetCrew uses local members rather than device sync. Add family member names in the
+                Members tab, and anyone using the device can log feedings under their name. All data
+                stays on your device.
               </p>
             </div>
           </AccordionItem>
@@ -173,8 +124,7 @@ export default function Support() {
                 <li>Receive local notifications and reminders</li>
               </ul>
               <p className="mb-4">
-                <strong>Household Sharing:</strong> If you're in a household, changes will
-                automatically sync when you reconnect to the internet.
+                PetCrew works fully offline since all data is stored locally on your device.
               </p>
             </div>
           </AccordionItem>
@@ -186,15 +136,6 @@ export default function Support() {
               <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
                 <li>Uninstall the PetCrew app from your device</li>
                 <li>All local data will be permanently deleted</li>
-              </ol>
-
-              <h4 className="mb-3 font-semibold text-gray-900">Leave a Household</h4>
-              <p className="mb-4">If you're in a household:</p>
-              <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Open PetCrew Settings</li>
-                <li>Go to Household</li>
-                <li>Tap "Leave Household"</li>
-                <li>Confirm - your data will remain local on your device</li>
               </ol>
               <div className="mt-4 rounded-lg bg-red-50 p-4">
                 <p className="text-sm text-red-800">
@@ -228,32 +169,13 @@ export default function Support() {
                   <strong>Update iOS:</strong> Go to Settings → General → Software Update
                 </li>
                 <li>
-                  <strong>Reinstall:</strong> Delete app and reinstall from App Store (note: this will delete local data unless you're in a household)
+                  <strong>Reinstall:</strong> Delete app and reinstall from App Store (note: this will delete all local data — back up via iCloud device backup first)
                 </li>
               </ol>
               <p className="text-gray-600">
                 If issues persist, contact bryanstudio.dev@gmail.com with details about when the crash
                 occurs.
               </p>
-            </div>
-          </AccordionItem>
-
-          <AccordionItem title="Household sync not working" defaultOpen>
-            <div className="prose max-w-none">
-              <p className="mb-4">If your data isn't syncing with household members:</p>
-              <ol className="mb-4 list-inside list-decimal space-y-2 text-gray-600">
-                <li>Verify all members are in the same household</li>
-                <li>Check internet connection on all devices</li>
-                <li>Make sure all members have the latest version of PetCrew</li>
-                <li>Try leaving and rejoining the household</li>
-                <li>Wait a few moments for sync to complete</li>
-              </ol>
-              <div className="mt-4 rounded-lg bg-blue-50 p-4">
-                <p className="text-sm text-blue-800">
-                  <strong>Tip:</strong> Sync happens in real-time when you have an internet connection.
-                  Check household status in Settings → Household.
-                </p>
-              </div>
             </div>
           </AccordionItem>
 
@@ -344,8 +266,7 @@ export default function Support() {
             <h3 className="mb-2 font-semibold text-gray-900">Recommended</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>• iOS 16.0 or later</li>
-              <li>• iCloud account for sync</li>
-              <li>• Stable internet connection</li>
+              <li>• 100 MB available storage</li>
             </ul>
           </div>
         </div>

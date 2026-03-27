@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: 'Jessica L.',
     role: 'Multi-pet household',
-    text: "Started free, upgraded to Premium when we got our second dog. Best $3/month I spend.",
+    text: "I track three dogs and two cats — all completely free. No other app lets you do that without a subscription.",
     rating: 5,
   },
 ];

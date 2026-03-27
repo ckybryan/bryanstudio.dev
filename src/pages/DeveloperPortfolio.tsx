@@ -161,8 +161,8 @@ export default function DeveloperPortfolio() {
                       PetCrew
                     </h3>
                     <p className="mb-4 text-lg text-gray-600">
-                      Smart pet care companion. Track feeding schedules, share care with family, and
-                      never miss a meal. Simple, beautiful, and built for pet parents who care.
+                      Smart pet care companion. Track feeding schedules, prevent double-feeding, and
+                      never miss a meal. 100% free, private, and built for pet parents who care.
                     </p>
                     <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                       <span className="rounded-full bg-purple-100 px-4 py-2 text-sm font-semibold text-purple-600">
@@ -172,7 +172,7 @@ export default function DeveloperPortfolio() {
                         Pet Care
                       </span>
                       <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-600">
-                        Family Sharing
+                        100% Free
                       </span>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export default function DeveloperPortfolio() {
               bryanstudio.dev@gmail.com
             </a>
           </p>
-          <p className="text-sm text-gray-500">© 2025 Bryan Studio. All rights reserved.</p>
+          <p className="text-sm text-gray-500">© {new Date().getFullYear()} Bryan Studio. All rights reserved.</p>
         </div>
       </footer>
     </div>

@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
     <LegalPageLayout
       title="Privacy Policy"
       icon="🔒"
-      lastUpdated="Last Updated: November 11, 2025"
+      lastUpdated={`Last Updated: March ${new Date().getFullYear()}`}
     >
       {/* TL;DR Summary */}
       <div className="mb-8 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 p-8 shadow-sm">
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
-            <span>Optional household sharing syncs data across your family's devices</span>
+            <span>All data stored locally on your device — no cloud, no servers</span>
           </li>
           <li className="flex items-start">
             <span className="mr-3 text-xl">✅</span>
@@ -64,22 +64,33 @@ export default function PrivacyPolicy() {
             <h4 className="mb-3 font-semibold text-gray-900">Data You Create</h4>
             <p className="mb-4">
               All pet care information (feeding times, photos, notes, etc.) is stored locally on
-              your device. This data never leaves your device unless you choose to create or join
-              a household for family sharing.
+              your device. This data never leaves your device.
             </p>
 
-            <h4 className="mb-3 font-semibold text-gray-900">What We Don't Collect</h4>
+            <h4 className="mb-3 font-semibold text-gray-900">Device Permissions</h4>
             <p className="mb-4">
-              <strong>We do not collect any analytics, usage data, or telemetry.</strong> PetCrew is completely private:
+              PetCrew may request the following device permissions, all of which are optional:
             </p>
             <ul className="list-inside list-disc space-y-2 text-gray-600">
-              <li>No usage tracking or behavior analytics</li>
-              <li>No crash reports or error logs sent to servers</li>
+              <li><strong>Camera & Photo Library:</strong> Only used if you choose to add photos to pet profiles. Photos are stored locally on your device.</li>
+              <li><strong>Notifications:</strong> Used for feeding reminders. A device token is sent to Apple Push Notification Service (APNS) — no personal data is included.</li>
+            </ul>
+
+            <h4 className="mt-6 mb-3 font-semibold text-gray-900">What We Don't Collect</h4>
+            <p className="mb-4">
+              <strong>PetCrew does not collect analytics, usage data, or telemetry.</strong>
+            </p>
+            <ul className="list-inside list-disc space-y-2 text-gray-600">
               <li>No personal identification information (name, email, phone)</li>
-              <li>No location data of any kind</li>
+              <li>No location data</li>
               <li>No contacts or other device data</li>
               <li>No advertising identifiers or tracking cookies</li>
             </ul>
+            <div className="mt-4 rounded-lg bg-yellow-50 p-4">
+              <p className="text-sm text-yellow-800">
+                <strong>Note:</strong> Apple may collect anonymous crash reports if you have opted into sharing analytics in your iOS Settings. This is managed by Apple, not by PetCrew.
+              </p>
+            </div>
             <div className="mt-4 rounded-lg bg-green-50 p-4">
               <p className="text-sm text-green-800">
                 <strong>Privacy First:</strong> Your pet care data stays on your device. We never see it, track it, or analyze it.
@@ -88,22 +99,22 @@ export default function PrivacyPolicy() {
           </div>
         </AccordionItem>
 
-        <AccordionItem title="Household Sharing" defaultOpen>
+        <AccordionItem title="Local Storage Only" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
-              PetCrew offers optional household sharing to sync pet care data with family members
-              across devices. When you create or join a household:
+              All PetCrew data is stored exclusively on your device. We do not operate any servers
+              or cloud infrastructure for storing user data.
             </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
-              <li>Your pet data syncs across all household members' devices</li>
-              <li>Data is stored securely in our database with encryption</li>
-              <li>Only household members you invite can access your pet information</li>
-              <li>You can leave a household anytime in the app settings</li>
+              <li>Pet profiles, feeding logs, and settings are stored on-device</li>
+              <li>Local member names are stored on-device</li>
+              <li>No data is transmitted to external servers</li>
+              <li>Uninstalling the app permanently removes all data</li>
             </ul>
-            <div className="mt-4 rounded-lg bg-blue-50 p-4">
-              <p className="text-sm text-blue-800">
-                <strong>Note:</strong> Household sharing is entirely optional. PetCrew works perfectly
-                in local mode, storing all data privately on your device.
+            <div className="mt-4 rounded-lg bg-green-50 p-4">
+              <p className="text-sm text-green-800">
+                <strong>100% Local:</strong> PetCrew has no servers, no cloud sync, and no way to
+                access your data. Your information never leaves your phone.
               </p>
             </div>
           </div>
@@ -116,13 +127,10 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>
-                <strong>Pet care data:</strong> Stored locally on your device or synced within your household (if you enable sharing)
+                <strong>Pet care data:</strong> Stored locally on your device and never transmitted anywhere
               </li>
               <li>
-                <strong>Household sharing:</strong> When enabled, pet data is shared only with household members you invite
-              </li>
-              <li>
-                <strong>Support requests:</strong> Information you provide when contacting us is used only to help resolve your issue
+                <strong>Support requests:</strong> Information you provide when contacting us via email is used only to help resolve your issue
               </li>
             </ul>
             <p className="font-semibold text-gray-900">
@@ -140,16 +148,19 @@ export default function PrivacyPolicy() {
 
             <h4 className="mb-3 font-semibold text-gray-900">Service Providers</h4>
             <p className="mb-4">
-              When you use household sharing, your pet data is stored in our secure database to enable
-              multi-device sync. We use:
+              PetCrew does not use any servers or cloud services for storing user data. The only
+              third-party services involved are:
             </p>
 
             <ul className="mb-6 list-inside list-disc space-y-2 text-gray-600">
               <li>
-                <strong>Database hosting:</strong> Secure cloud infrastructure for household data sync
+                <strong>App Store (Apple):</strong> For app distribution
               </li>
               <li>
-                <strong>App Store (Apple):</strong> For app distribution and in-app purchases
+                <strong>Apple Push Notification Service (APNS):</strong> For feeding reminders — only a device token is sent, no personal data
+              </li>
+              <li>
+                <strong>Apple Crash Reporting:</strong> If you have opted into sharing analytics in iOS Settings, Apple may collect anonymous crash data. This is managed by Apple, not by PetCrew.
               </li>
             </ul>
 
@@ -177,8 +188,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="mb-4 list-inside list-disc space-y-2 text-gray-600">
               <li>All data on your device is protected by iOS security features</li>
-              <li>Household data is encrypted in transit and at rest</li>
-              <li>We use secure HTTPS connections for all network communications</li>
+              <li>No data is transmitted over the network — everything stays on-device</li>
               <li>Regular security audits and updates</li>
             </ul>
             <div className="mt-4 rounded-lg bg-yellow-50 p-4">
@@ -207,10 +217,10 @@ export default function PrivacyPolicy() {
               </li>
             </ul>
 
-            <h4 className="mb-3 font-semibold text-gray-900">Household Sharing</h4>
+            <h4 className="mb-3 font-semibold text-gray-900">Complete Data Removal</h4>
             <p>
-              Leave a household anytime in Settings → Household. When you leave, your device will
-              stop syncing with other household members, and your data will remain local on your device.
+              Uninstalling PetCrew permanently removes all data from your device. Since we have no
+              servers or cloud storage, there is no residual data to delete elsewhere.
             </p>
           </div>
         </AccordionItem>
@@ -239,12 +249,8 @@ export default function PrivacyPolicy() {
         <AccordionItem title="International Users" defaultOpen>
           <div className="prose max-w-none">
             <p className="mb-4">
-              PetCrew is available worldwide. If you use PetCrew outside the United States, your
-              data remains on your device unless you enable iCloud sync.
-            </p>
-            <p className="mb-4">
-              For iCloud users, data storage location is determined by your Apple ID country
-              settings and Apple's data policies.
+              PetCrew is available worldwide. All data remains on your device regardless of your
+              location.
             </p>
             <p>
               We comply with applicable data protection laws, including GDPR for European users and

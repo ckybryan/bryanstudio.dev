@@ -185,7 +185,7 @@ export default function FinalCTA() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 1 }}
           >
-            <p>© 2025 PetCrew. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} PetCrew. All rights reserved.</p>
             <p className="mt-2">Made with ❤️ for pet parents everywhere</p>
           </motion.div>
         </div>

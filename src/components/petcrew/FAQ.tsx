@@ -6,42 +6,42 @@ const faqs = [
   {
     question: 'Do I need to create an account?',
     answer:
-      "Nope! Download and start logging immediately. No email, no password, no hassle. Only needed for Premium household sync.",
+      'No. Just download and start tracking. No email, no password, no sign-up needed.',
   },
   {
-    question: 'What happens to my data?',
+    question: 'Is PetCrew really free?',
     answer:
-      "Free users: 100% local on your device. We never see it. Premium: Encrypted cloud sync shared only with your invited household members. You control who joins.",
+      'Yes — every feature is free with no limits. Unlimited pets, unlimited history, all widget sizes, full analytics. No subscriptions, no in-app purchases, no ads.',
   },
   {
-    question: 'Can I try Premium features?',
+    question: 'What do the status colors mean?',
     answer:
-      'Yes! Start a 7-day free trial of Premium. No credit card required. Cancel anytime with one tap.',
+      'Green means your pet was fed recently. Yellow means a feeding is due soon. Red means feeding is overdue. The same colors appear on your home screen widgets and in the calendar history.',
   },
   {
-    question: 'Does this work offline?',
+    question: 'How do I log a feeding?',
     answer:
-      'Absolutely. All core features work without internet. Premium sync happens automatically when you reconnect.',
+      'Tap the "Feed now" button on any pet card. You can also add details like notes or mark it as a treat. Feedings can be logged from the app or directly from a home screen widget.',
   },
   {
-    question: 'How many pets can I track for free?',
+    question: 'How do home screen widgets work?',
     answer:
-      'Up to 2 pets completely free, forever. Need more? Upgrade to Premium for unlimited pets.',
+      'PetCrew offers small and medium iOS widgets. The small widget shows one pet with its feeding status. The medium widget shows meal progress and who fed last. Widgets update automatically after each feeding.',
   },
   {
-    question: 'What\'s included in the free version?',
+    question: 'How do I coordinate feeding with family?',
     answer:
-      'Everything you need: Quick feed logging, iOS widgets, reminders, 30-day history, color-coded calendar, and smart notifications. No ads, ever.',
+      'Go to the Members tab and add family members by name. When anyone logs a feeding, they select who fed the pet. This way you can see exactly who fed and when — no one else needs to install the app.',
   },
   {
-    question: 'How does household sync work?',
+    question: 'Is my data private?',
     answer:
-      'Premium users create a household and share an invite code (like PET-ABC123). Family members join instantly and all devices stay synced in real-time.',
+      'All data is stored locally on your device. We have no servers and no way to access your information. Deleting the app removes all data permanently.',
   },
   {
-    question: 'Can I switch between devices?',
+    question: 'Does PetCrew work offline?',
     answer:
-      'Free users: Each device is independent. Premium users: Automatic sync across all devices in your household.',
+      'Yes. Everything works without an internet connection since all data is stored on your device. Notifications and reminders also work offline.',
   },
 ];
 
@@ -135,7 +135,7 @@ export default function FAQ() {
         >
           <p className="mb-4 text-lg text-gray-600">Still have questions?</p>
           <a
-            href="mailto:support@petcrewapp.com"
+            href="mailto:bryanstudio.dev@gmail.com"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

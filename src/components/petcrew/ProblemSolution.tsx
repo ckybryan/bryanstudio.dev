@@ -92,8 +92,8 @@ export default function ProblemSolution() {
                 },
                 {
                   icon: '👨‍👩‍👧‍👦',
-                  title: 'Family sync keeps everyone aligned',
-                  desc: 'Real-time updates across all devices',
+                  title: 'Track who fed the pet',
+                  desc: 'Add family members to see who fed and when',
                 },
                 {
                   icon: '📱',

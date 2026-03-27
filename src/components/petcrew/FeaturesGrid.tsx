@@ -86,7 +86,7 @@ export default function FeaturesGrid() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Small widget for 1 pet (FREE)
+                  Small widget with pet status
                 </li>
                 <li className="flex items-center gap-2">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
@@ -96,7 +96,7 @@ export default function FeaturesGrid() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  Medium widget for 3 pets (Premium)
+                  Medium widget with meal progress
                 </li>
                 <li className="flex items-center gap-2">
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
@@ -168,10 +168,10 @@ export default function FeaturesGrid() {
               </svg>
             </div>
             <h3 className="mb-2 text-2xl font-bold text-white">Free Forever</h3>
-            <p className="text-amber-100">Track up to 2 pets completely free. No trials, no tricks.</p>
+            <p className="text-amber-100">Track all your pets completely free. No limits, no tricks.</p>
           </motion.div>
 
-          {/* Household Sync */}
+          {/* Local Members */}
           <motion.div
             className="group overflow-hidden rounded-3xl bg-gradient-to-br from-blue-500 to-indigo-600 p-8 shadow-xl md:col-span-2"
             variants={itemVariants}
@@ -195,13 +195,10 @@ export default function FeaturesGrid() {
                     />
                   </svg>
                 </div>
-                <h3 className="mb-2 text-2xl font-bold text-white">Household Sync</h3>
+                <h3 className="mb-2 text-2xl font-bold text-white">Local Members</h3>
                 <p className="text-blue-100">
-                  Share feedings with family. Everyone stays in sync across all devices.
+                  Add family members to track who fed the pet. No accounts needed — just add names and start logging.
                 </p>
-                <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm">
-                  Premium Feature
-                </div>
               </div>
             </div>
           </motion.div>
