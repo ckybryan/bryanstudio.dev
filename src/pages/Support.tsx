@@ -25,7 +25,7 @@ export default function Support() {
             </div>
           </a>
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/us/app/petcrew/id6754221965"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 rounded-xl bg-white p-4 shadow-sm transition-all hover:shadow-md"

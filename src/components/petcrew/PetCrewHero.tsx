@@ -73,7 +73,7 @@ export default function PetCrewHero() {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/us/app/petcrew/id6754221965"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-black px-8 py-4 font-semibold text-white shadow-xl transition-all hover:scale-105 hover:shadow-2xl"

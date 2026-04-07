@@ -89,7 +89,7 @@ export default function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <a
-              href="https://apps.apple.com"
+              href="https://apps.apple.com/us/app/petcrew/id6754221965"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 rounded-full bg-black px-10 py-5 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105 hover:shadow-3xl"
