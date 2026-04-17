@@ -17,33 +17,24 @@ export default function StudioFooter() {
             made in Toronto.
           </p>
         </div>
+
         <div>
-          <p className="mono-caps text-[10px] text-white/40 mb-4">Products</p>
+          <p className="mono-caps text-[10px] text-white/40 mb-4">PetCrew</p>
           <ul className="space-y-2 mono text-xs">
             <li>
               <Link to="/petcrew" className="hover:text-white transition-colors">
-                PetCrew
+                Overview
               </Link>
             </li>
             <li>
               <a
-                href="https://snap-sell.com"
+                href="https://apps.apple.com/us/app/petcrew/id6754221965"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                SnapSell ↗
+                App Store ↗
               </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p className="mono-caps text-[10px] text-white/40 mb-4">Studio</p>
-          <ul className="space-y-2 mono text-xs">
-            <li>
-              <Link to="/studio" className="hover:text-white transition-colors">
-                About
-              </Link>
             </li>
             <li>
               <Link
@@ -71,9 +62,31 @@ export default function StudioFooter() {
             </li>
           </ul>
         </div>
+
         <div>
-          <p className="mono-caps text-[10px] text-white/40 mb-4">Contact</p>
+          <p className="mono-caps text-[10px] text-white/40 mb-4">SnapSell</p>
           <ul className="space-y-2 mono text-xs">
+            <li>
+              <a
+                href="https://snap-sell.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Open SnapSell ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="mono-caps text-[10px] text-white/40 mb-4">Studio</p>
+          <ul className="space-y-2 mono text-xs">
+            <li>
+              <Link to="/studio" className="hover:text-white transition-colors">
+                About
+              </Link>
+            </li>
             <li>
               <a
                 href="mailto:info@bryanstudio.dev"
