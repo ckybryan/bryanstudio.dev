@@ -134,12 +134,75 @@ export default function DeveloperPortfolio() {
             </p>
           </motion.div>
 
-          {/* PetCrew Card */}
-          <div className="mx-auto max-w-4xl">
+          {/* App Cards */}
+          <div className="mx-auto flex max-w-4xl flex-col gap-8">
+            {/* SnapSell Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={appsInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <a
+                href="https://snap-sell.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block overflow-hidden rounded-3xl bg-gradient-to-br from-teal-50 to-amber-50 p-8 shadow-lg transition-all hover:scale-105 hover:shadow-2xl md:p-12"
+              >
+                <div className="flex flex-col items-center gap-8 md:flex-row">
+                  {/* Wordmark */}
+                  <div className="flex h-32 w-32 flex-shrink-0 items-center justify-center overflow-hidden rounded-3xl bg-white shadow-xl">
+                    <span className="text-xl font-extrabold tracking-tight text-[#21A593]">
+                      SnapSell
+                    </span>
+                  </div>
+
+                  {/* App Info */}
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="mb-3 text-3xl font-extrabold text-gray-900 transition-colors group-hover:text-[#21A593]">
+                      SnapSell
+                    </h3>
+                    <p className="mb-4 text-lg text-gray-600">
+                      Snap a photo, sell it. AI turns a single photo into a polished, platform-ready
+                      listing for Facebook Marketplace, eBay, Etsy, and Amazon in seconds.
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+                      <span className="rounded-full bg-teal-100 px-4 py-2 text-sm font-semibold text-[#21A593]">
+                        Web App
+                      </span>
+                      <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
+                        AI
+                      </span>
+                      <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-600">
+                        Marketplace Tools
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Arrow */}
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="h-8 w-8 text-[#21A593] transition-transform group-hover:translate-x-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </motion.div>
+
+            {/* PetCrew Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={appsInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.3 }}
             >
               <Link
                 to="/petcrew"
@@ -202,7 +265,7 @@ export default function DeveloperPortfolio() {
               className="mt-12 text-center"
               initial={{ opacity: 0 }}
               animate={appsInView ? { opacity: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
             >
               <p className="text-lg text-gray-500">More apps coming soon...</p>
             </motion.div>
