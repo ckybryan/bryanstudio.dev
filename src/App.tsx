@@ -1,16 +1,20 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DeveloperPortfolio from './pages/DeveloperPortfolio';
+import Studio from './pages/Studio';
 import PetCrewLanding from './pages/PetCrewLanding';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Support from './pages/Support';
 import Terms from './pages/Terms';
+import ScrollToTop from './components/studio/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-        {/* Developer portfolio home */}
+        {/* Studio home */}
         <Route path="/" element={<DeveloperPortfolio />} />
+        <Route path="/studio" element={<Studio />} />
 
         {/* PetCrew app routes */}
         <Route path="/petcrew" element={<PetCrewLanding />} />
