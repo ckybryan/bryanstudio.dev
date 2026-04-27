@@ -13,11 +13,11 @@ export default function CandlepostTile() {
           <div>
             <div className="flex items-start justify-between mb-8 gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-[18px] bg-candlepost overflow-hidden flex items-center justify-center shadow-lg ring-1 ring-black/5">
+                <div className="w-16 h-16 flex items-center justify-center">
                   <img
                     src="/candlepost/logo-120.png"
                     alt=""
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div>
