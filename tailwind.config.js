@@ -15,6 +15,8 @@ export default {
         accent: '#2A6F5A',
         petcrew: '#7C4DFF',
         snapsell: '#21A593',
+        candlepost: '#4A7A3D',
+        'candlepost-clay': '#C05C39',
       },
       fontFamily: {
         sans: ['Geist', 'system-ui', 'sans-serif'],

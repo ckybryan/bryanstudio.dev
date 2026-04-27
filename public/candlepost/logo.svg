@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Candlepost">
+  <!-- Moss-100 soft circle background -->
+  <circle cx="60" cy="60" r="58" fill="#dbe2d3"/>
+
+  <!-- Candle glyph: thin-line, moss-600 stroke, no fill.
+       Matches components/brand/logo.tsx Mark component at scale.
+       Source viewBox 24x24 → scale 3x → 72x72, center on 60,60. -->
+  <g transform="translate(24 24) scale(3)"
+     fill="none"
+     stroke="#4b6a37"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+    <!-- Flame -->
+    <path d="M12 2C12 2 9 6 9 9a3 3 0 0 0 6 0c0-3-3-7-3-7z"/>
+    <!-- Body -->
+    <rect x="9" y="12" width="6" height="9" rx="1"/>
+    <!-- Base -->
+    <line x1="7" y1="21" x2="17" y2="21"/>
+  </g>
+</svg>

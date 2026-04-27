@@ -2,6 +2,7 @@ import StudioNav from '../components/studio/StudioNav';
 import StudioFooter from '../components/studio/StudioFooter';
 import PetCrewTile from '../components/studio/PetCrewTile';
 import SnapSellTile from '../components/studio/SnapSellTile';
+import CandlepostTile from '../components/studio/CandlepostTile';
 import { Link } from 'react-router-dom';
 
 export default function DeveloperPortfolio() {
@@ -13,13 +14,13 @@ export default function DeveloperPortfolio() {
       <section id="top" className="px-6 md:px-8 py-28 md:py-40">
         <div className="max-w-6xl mx-auto">
           <p className="mono-caps text-[11px] text-muted mb-8">
-            Now shipping — 2 products
+            Now shipping — 3 products
           </p>
           <h1 className="display text-5xl md:text-[72px] leading-[1.05] max-w-4xl mb-8">
             Bryan Studio makes small, opinionated apps for everyday life.
           </h1>
           <p className="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
-            Based in Toronto. Two apps shipped. More in the oven.
+            Based in Toronto. Three apps shipped. More in the oven.
           </p>
         </div>
       </section>
@@ -32,12 +33,13 @@ export default function DeveloperPortfolio() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-baseline justify-between mb-12 border-b border-rule pb-4">
             <p className="mono-caps text-[11px] text-muted">Products</p>
-            <p className="mono text-xs text-muted">2 live · more coming</p>
+            <p className="mono text-xs text-muted">3 live · more coming</p>
           </div>
 
           <div className="space-y-6">
-            <PetCrewTile />
+            <CandlepostTile />
             <SnapSellTile />
+            <PetCrewTile />
           </div>
         </div>
       </section>
