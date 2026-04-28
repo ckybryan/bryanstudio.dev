@@ -5,7 +5,7 @@ export default function StudioFooter() {
 
   return (
     <footer className="bg-ink text-white/80 px-6 md:px-8 py-16">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
         <div>
           <p className="display text-lg text-white flex items-center gap-2 mb-4">
             Bryan Studio
@@ -19,53 +19,18 @@ export default function StudioFooter() {
         </div>
 
         <div>
-          <p className="mono-caps text-[10px] text-white/40 mb-4">PetCrew</p>
+          <p className="mono-caps text-[10px] text-white/40 mb-4">Products</p>
           <ul className="space-y-2 mono text-xs">
             <li>
-              <Link to="/petcrew" className="hover:text-white transition-colors">
-                Overview
-              </Link>
-            </li>
-            <li>
               <a
-                href="https://apps.apple.com/us/app/petcrew/id6754221965"
+                href="https://candlepost.bryanstudio.dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                App Store ↗
+                Candlepost ↗
               </a>
             </li>
-            <li>
-              <Link
-                to="/petcrew/support"
-                className="hover:text-white transition-colors"
-              >
-                Support
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/petcrew/privacy"
-                className="hover:text-white transition-colors"
-              >
-                Privacy
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/petcrew/terms"
-                className="hover:text-white transition-colors"
-              >
-                Terms
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="mono-caps text-[10px] text-white/40 mb-4">SnapSell</p>
-          <ul className="space-y-2 mono text-xs">
             <li>
               <a
                 href="https://snap-sell.com"
@@ -73,8 +38,13 @@ export default function StudioFooter() {
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors"
               >
-                Open SnapSell ↗
+                SnapSell ↗
               </a>
+            </li>
+            <li>
+              <Link to="/petcrew" className="hover:text-white transition-colors">
+                PetCrew
+              </Link>
             </li>
           </ul>
         </div>
