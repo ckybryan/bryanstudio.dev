@@ -65,6 +65,16 @@ export default function StudioFooter() {
                 info@bryanstudio.dev
               </a>
             </li>
+            <li>
+              <a
+                href="https://x.com/bryanstudiodev"
+                target="_blank"
+                rel="me noopener"
+                className="hover:text-white transition-colors"
+              >
+                X ↗
+              </a>
+            </li>
           </ul>
         </div>
       </div>
