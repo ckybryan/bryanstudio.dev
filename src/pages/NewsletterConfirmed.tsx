@@ -4,10 +4,10 @@ import StudioFooter from '../components/studio/StudioFooter';
 
 export default function NewsletterConfirmed() {
   return (
-    <div className="min-h-screen bg-paper text-ink">
+    <div className="min-h-screen bg-paper text-ink flex flex-col">
       <StudioNav />
 
-      <section className="px-6 md:px-8 py-28 md:py-40">
+      <section className="flex-1 px-6 md:px-8 py-28 md:py-40">
         <div className="max-w-2xl mx-auto">
           <p className="mono-caps text-[11px] text-muted mb-8">Newsletter</p>
           <h1 className="display text-4xl md:text-5xl leading-[1.1] mb-6">
