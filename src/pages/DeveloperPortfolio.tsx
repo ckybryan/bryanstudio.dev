@@ -3,6 +3,7 @@ import StudioFooter from '../components/studio/StudioFooter';
 import PetCrewTile from '../components/studio/PetCrewTile';
 import SnapSellTile from '../components/studio/SnapSellTile';
 import CandlepostTile from '../components/studio/CandlepostTile';
+import NewsletterSignup from '../components/studio/NewsletterSignup';
 import { Link } from 'react-router-dom';
 
 export default function DeveloperPortfolio() {
@@ -22,6 +23,9 @@ export default function DeveloperPortfolio() {
           <p className="text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
             Based in Toronto. Three apps shipped. More in the oven.
           </p>
+          <div className="mt-12 md:mt-16 max-w-md">
+            <NewsletterSignup variant="hero" />
+          </div>
         </div>
       </section>
 
