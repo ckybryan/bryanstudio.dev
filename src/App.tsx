@@ -6,6 +6,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import Support from './pages/Support';
 import Terms from './pages/Terms';
 import NewsletterConfirmed from './pages/NewsletterConfirmed';
+import Services from './pages/Services';
 import ScrollToTop from './components/studio/ScrollToTop';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         {/* Studio home */}
         <Route path="/" element={<DeveloperPortfolio />} />
         <Route path="/studio" element={<Studio />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/newsletter/confirmed" element={<NewsletterConfirmed />} />
 
         {/* PetCrew app routes */}

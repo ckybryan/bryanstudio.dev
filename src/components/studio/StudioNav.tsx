@@ -8,6 +8,7 @@ type Props = {
 
 const defaultLinks: NavLink[] = [
   { label: 'Products', href: '/#products' },
+  { label: 'Services', href: '/services' },
   { label: 'Studio', href: '/studio' },
   { label: 'Contact', href: 'mailto:info@bryanstudio.dev', external: true },
 ];
