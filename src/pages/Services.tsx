@@ -9,35 +9,64 @@ type Tier = {
 
 const tiers: Tier[] = [
   {
-    name: 'Small site fix',
+    name: 'Small website',
     price: '$20',
-    blurb: 'One page, up to 2 hours — bug fix, copy update, small tweak.',
+    blurb: '1-2 page landing site, deployed live. No auth, no database.',
   },
   {
     name: 'Mid-size website',
     price: '$50',
-    blurb: 'Up to 5 pages, no auth or database, deployed live.',
+    blurb: 'Up to 10 pages, no auth or database, deployed live and ready.',
   },
   {
     name: 'Big website',
     price: '$100',
-    blurb: 'Up to 10 pages, login, database, deployed live.',
+    blurb:
+      'Up to 20 pages with login, database, and deploy. Built for real users.',
   },
   {
     name: 'iOS app (TestFlight)',
     price: '$100',
     blurb: 'Small native app, up to 5 screens, delivered via TestFlight.',
   },
-  {
-    name: 'App Store submission',
-    price: '+$50',
-    blurb: 'Add-on. I handle the submission and Apple review.',
-  },
+];
+
+const addOns: Tier[] = [
   {
     name: 'AI feature',
     price: '+$20',
     blurb:
-      'Add-on per feature — chatbot, smart search, content or image generation, classification, anything.',
+      'Per feature — chatbot, smart search, content or image generation, classification, anything.',
+  },
+  {
+    name: 'App Store submission',
+    price: '+$50',
+    blurb: 'I handle the submission and Apple review for an iOS app build.',
+  },
+  {
+    name: 'SEO basics',
+    price: '+$20',
+    blurb: 'Meta tags, sitemap, robots.txt, OG image, and on-page setup.',
+  },
+  {
+    name: 'Custom domain setup',
+    price: '+$10',
+    blurb: 'DNS records, SSL, and redirects from www to root.',
+  },
+  {
+    name: 'Email contact form',
+    price: '+$10',
+    blurb: 'Working contact form with spam protection.',
+  },
+  {
+    name: 'Additional page',
+    price: '+$5',
+    blurb: 'One extra page beyond your tier limit.',
+  },
+  {
+    name: 'Additional revision',
+    price: '+$10',
+    blurb: 'One extra round of revisions beyond what your tier includes.',
   },
 ];
 
@@ -68,7 +97,7 @@ export default function Services() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-baseline justify-between mb-12 border-b border-rule pb-4">
             <p className="mono-caps text-[11px] text-muted">Pricing</p>
-            <p className="mono text-xs text-muted">flat rate · CAD</p>
+            <p className="mono text-xs text-muted">flat rate · USD</p>
           </div>
 
           <ul className="divide-y divide-rule border-b border-rule">
@@ -93,43 +122,148 @@ export default function Services() {
               </li>
             ))}
           </ul>
+
+          <div className="flex items-baseline justify-between mt-20 mb-12 border-b border-rule pb-4">
+            <p className="mono-caps text-[11px] text-muted">Add-ons</p>
+            <p className="mono text-xs text-muted">stack on any tier</p>
+          </div>
+
+          <ul className="divide-y divide-rule border-b border-rule">
+            {addOns.map((addon) => (
+              <li
+                key={addon.name}
+                className="grid grid-cols-12 gap-4 md:gap-8 py-6 md:py-8 items-baseline"
+              >
+                <div className="col-span-12 md:col-span-4">
+                  <p className="display text-xl md:text-2xl">{addon.name}</p>
+                </div>
+                <div className="col-span-8 md:col-span-6">
+                  <p className="text-base text-muted leading-relaxed">
+                    {addon.blurb}
+                  </p>
+                </div>
+                <div className="col-span-4 md:col-span-2 text-right">
+                  <p className="mono text-lg md:text-xl text-ink">
+                    {addon.price}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* What I need from you */}
+      <section className="bg-paper-2 px-6 md:px-8 py-20 md:py-28 border-t border-b border-rule">
+        <div className="max-w-3xl mx-auto">
+          <p className="mono-caps text-[11px] text-muted mb-8">
+            What I need from you
+          </p>
+          <ul className="space-y-8 text-ink leading-relaxed">
+            <li>
+              <p className="display text-lg mb-2">1. Project brief</p>
+              <p className="text-base text-muted">
+                What is the site for, who is the audience, what should
+                visitors do or feel? Drop links to 2-3 sites you like the
+                look of, plus any wireframes or sketches you have.
+              </p>
+            </li>
+            <li>
+              <p className="display text-lg mb-2">2. Content and assets</p>
+              <p className="text-base text-muted">
+                Send any copy, logos, product photos, and other images you
+                want on the site. If you don't have copy yet, write rough
+                notes per page and I'll polish them.
+              </p>
+            </li>
+            <li>
+              <p className="display text-lg mb-2">3. Design preferences</p>
+              <p className="text-base text-muted">
+                Any brand colors, fonts, or styles you want me to follow?
+                If you don't have a brand yet, just say "pick something
+                clean" and I will.
+              </p>
+            </li>
+            <li>
+              <p className="display text-lg mb-2">4. Domain and hosting</p>
+              <p className="text-base text-muted">
+                Do you have a domain you want to use? Any existing hosting
+                account? If not, I'll deploy on a free Vercel or Railway
+                subdomain you can swap later.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
 
       {/* How I work */}
-      <section className="bg-paper-2 px-6 md:px-8 py-20 md:py-28 border-t border-b border-rule">
+      <section className="px-6 md:px-8 py-20 md:py-28 border-b border-rule">
         <div className="max-w-3xl mx-auto">
-          <p className="mono-caps text-[11px] text-muted mb-6">How it works</p>
-          <ol className="space-y-5 text-lg text-ink leading-relaxed">
+          <p className="mono-caps text-[11px] text-muted mb-8">
+            How it works
+          </p>
+          <ol className="space-y-8 text-ink leading-relaxed">
             <li>
-              <span className="mono text-sm text-accent mr-3">01</span>
-              You send a brief — what you want, examples, screenshots. No
-              brief, no quote.
+              <p className="display text-lg mb-2">
+                <span className="mono text-sm text-accent mr-3">01</span>
+                Brief review and kickoff
+              </p>
+              <p className="text-base text-muted ml-9">
+                I read everything you sent, ask any clarifying questions,
+                and confirm the scope, page list, and timeline so we are
+                aligned before any code happens.
+              </p>
             </li>
             <li>
-              <span className="mono text-sm text-accent mr-3">02</span>
-              I confirm the tier and timeline within 24 hours.
+              <p className="display text-lg mb-2">
+                <span className="mono text-sm text-accent mr-3">02</span>
+                Design draft
+              </p>
+              <p className="text-base text-muted ml-9">
+                I send you a first design pass — either a Figma mockup or
+                a deployed staging link, depending on the tier. You give
+                feedback in writing or as comments.
+              </p>
             </li>
             <li>
-              <span className="mono text-sm text-accent mr-3">03</span>
-              You pay up front via Interac e-Transfer. Full amount, before I
-              start.
+              <p className="display text-lg mb-2">
+                <span className="mono text-sm text-accent mr-3">03</span>
+                Build and deploy to staging
+              </p>
+              <p className="text-base text-muted ml-9">
+                I build the site to spec and deploy it to a staging URL
+                you can click through. You see the real thing running, not
+                a screenshot.
+              </p>
             </li>
             <li>
-              <span className="mono text-sm text-accent mr-3">04</span>
-              I build it. One round of revisions included; extra rounds $10
-              each.
+              <p className="display text-lg mb-2">
+                <span className="mono text-sm text-accent mr-3">04</span>
+                Revisions
+              </p>
+              <p className="text-base text-muted ml-9">
+                You send the changes you want. I apply them and re-deploy
+                to staging. Repeat until you're happy, within the revision
+                count for your tier.
+              </p>
             </li>
             <li>
-              <span className="mono text-sm text-accent mr-3">05</span>
-              You get the code, the deploy, and a working product.
+              <p className="display text-lg mb-2">
+                <span className="mono text-sm text-accent mr-3">05</span>
+                Launch and handoff
+              </p>
+              <p className="text-base text-muted ml-9">
+                I push the final version live, hand over the code and
+                deployment access, and write a short note covering how to
+                update content yourself.
+              </p>
             </li>
           </ol>
         </div>
       </section>
 
       {/* The honest part */}
-      <section className="px-6 md:px-8 py-20 md:py-28 border-b border-rule">
+      <section className="bg-paper-2 px-6 md:px-8 py-20 md:py-28 border-b border-rule">
         <div className="max-w-3xl mx-auto">
           <p className="mono-caps text-[11px] text-muted mb-6">
             The honest part
@@ -152,7 +286,7 @@ export default function Services() {
       </section>
 
       {/* What I don't do */}
-      <section className="bg-paper-2 px-6 md:px-8 py-20 md:py-28 border-b border-rule">
+      <section className="px-6 md:px-8 py-20 md:py-28 border-b border-rule">
         <div className="max-w-3xl mx-auto">
           <p className="mono-caps text-[11px] text-muted mb-6">
             What I don't do
@@ -170,20 +304,31 @@ export default function Services() {
       </section>
 
       {/* Contact */}
-      <section className="px-6 md:px-8 py-24">
+      <section className="bg-paper-2 px-6 md:px-8 py-24">
         <div className="max-w-2xl mx-auto text-center">
           <p className="mono-caps text-[11px] text-muted mb-6">Get in touch</p>
-          <p className="text-xl md:text-2xl leading-relaxed text-ink mb-6">
+          <p className="text-xl md:text-2xl leading-relaxed text-ink mb-8">
             Send a brief, get a quote within 24 hours.
           </p>
-          <a
-            href="mailto:info@bryanstudio.dev?subject=Project%20brief"
-            className="mono text-sm text-accent link-sweep inline-block"
-          >
-            info@bryanstudio.dev →
-          </a>
-          <p className="mono text-xs text-muted mt-8">
-            Toronto · Eastern Time · payment via Interac e-Transfer
+          <div className="flex flex-col items-center gap-5">
+            <a
+              href="https://www.upwork.com/freelancers/~01536347d6eee76c9b?mp_source=share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-ink text-paper px-6 py-3 mono text-sm hover:bg-accent transition-colors"
+            >
+              Hire me on Upwork →
+            </a>
+            <a
+              href="mailto:info@bryanstudio.dev?subject=Project%20brief"
+              className="mono text-sm text-accent link-sweep inline-block"
+            >
+              or email info@bryanstudio.dev →
+            </a>
+          </div>
+          <p className="mono text-xs text-muted mt-10">
+            Toronto · Eastern Time · prices in USD · pay via Upwork escrow
+            or Interac e-Transfer (CAD at current FX)
           </p>
         </div>
       </section>
