@@ -1,16 +1,26 @@
 import { Link } from 'react-router-dom';
 
-type NavLink = { label: string; href: string; external?: boolean };
+type NavLink = {
+  label: string;
+  href: string;
+  external?: boolean;
+  desktopOnly?: boolean;
+};
 
 type Props = {
   links?: NavLink[];
 };
 
 const defaultLinks: NavLink[] = [
-  { label: 'Products', href: '/#products' },
+  { label: 'Products', href: '/#products', desktopOnly: true },
   { label: 'Services', href: '/services' },
   { label: 'Studio', href: '/studio' },
-  { label: 'Contact', href: 'mailto:info@bryanstudio.dev', external: true },
+  {
+    label: 'Contact',
+    href: 'mailto:info@bryanstudio.dev',
+    external: true,
+    desktopOnly: true,
+  },
 ];
 
 export default function StudioNav({ links = defaultLinks }: Props) {
@@ -21,36 +31,31 @@ export default function StudioNav({ links = defaultLinks }: Props) {
           Bryan Studio
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
         </Link>
-        <nav className="flex items-center gap-5 md:gap-6 mono text-xs text-muted">
-          {links.map((link) =>
-            link.external ? (
+        <nav className="flex items-center gap-4 sm:gap-5 md:gap-6 mono text-xs text-muted">
+          {links.map((link) => {
+            const baseClass = `hover:text-ink transition-colors${
+              link.desktopOnly ? ' hidden sm:inline' : ''
+            }`;
+            return link.external ? (
               <a
                 key={link.href}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-ink transition-colors"
+                className={baseClass}
               >
                 {link.label}
               </a>
             ) : link.href.startsWith('/#') ? (
-              <a
-                key={link.href}
-                href={link.href}
-                className="hover:text-ink transition-colors"
-              >
+              <a key={link.href} href={link.href} className={baseClass}>
                 {link.label}
               </a>
             ) : (
-              <Link
-                key={link.href}
-                to={link.href}
-                className="hover:text-ink transition-colors"
-              >
+              <Link key={link.href} to={link.href} className={baseClass}>
                 {link.label}
               </Link>
-            )
-          )}
+            );
+          })}
         </nav>
       </div>
     </header>
