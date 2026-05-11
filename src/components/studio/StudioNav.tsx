@@ -13,7 +13,6 @@ type Props = {
 
 const defaultLinks: NavLink[] = [
   { label: 'Products', href: '/#products', desktopOnly: true },
-  { label: 'Services', href: '/services' },
   { label: 'Studio', href: '/studio' },
   {
     label: 'Contact',

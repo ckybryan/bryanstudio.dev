@@ -64,11 +64,6 @@ export default function StudioFooter() {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-white transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
                 <a
                   href="mailto:info@bryanstudio.dev"
                   className="hover:text-white transition-colors"
