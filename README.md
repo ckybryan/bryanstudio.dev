@@ -1,3 +1,35 @@
+# bryanstudio.dev
+
+Marketing site for Bryan Studio: React 19 + TypeScript + Vite, styled with Tailwind.
+
+## Development
+
+```bash
+npm install
+npm run dev      # vite dev server on http://localhost:5173
+npm run build    # tsc + vite build -> dist/
+npm run preview  # serve the built output locally
+npm run lint
+```
+
+## Deployment
+
+The site is a static bundle served by a Cloudflare Worker named `bryanstudio-dev`, configured in
+`wrangler.jsonc`: `dist/` is uploaded as static assets with `not_found_handling:
+"single-page-application"`, so React Router deep links resolve without an express fallback. Both
+`www.bryanstudio.dev` and the apex are bound as custom domains; the apex redirect to www is a
+zone-level rule, not application code.
+
+Pushing to `main` deploys automatically: `.github/workflows/deploy.yml` runs `npm ci`,
+`npm run build` and `npx wrangler deploy`. The workflow needs two repository secrets,
+`CLOUDFLARE_API_TOKEN` (Workers Scripts: Edit) and `CLOUDFLARE_ACCOUNT_ID`; ask the account owner
+rather than committing them. To deploy by hand instead:
+
+```bash
+npm run build && npx wrangler deploy
+```
+
+Node 22 or newer is required (`.nvmrc` pins 24) because wrangler 4 does not run on older versions.
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -7,7 +7,9 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
-    sourcemap: true,
+    // No sourcemaps in the deployed bundle: they doubled dist size (2.1 MB index-*.js.map)
+    // and shipped readable source to the public site. Turn on locally when debugging.
+    sourcemap: false,
   },
   server: {
     port: 5173,

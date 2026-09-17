@@ -1,0 +1,21 @@
+# Cache policy, ported from the express server.js this replaces.
+#
+# server.js sent "no-cache, no-store, must-revalidate" on HTML and left everything else at
+# express' default. Cloudflare's own default for static assets is
+# "public, max-age=0, must-revalidate" (with an ETag) - correct, but it means deep links get a
+# revalidation round trip. HTML is pinned to no-store so a deploy is visible immediately, and
+# the fingerprinted bundles under /assets are cached for a year instead of being revalidated
+# on every visit.
+#
+# Rules match on the request URL, so a deep link only gets the default - still never stale.
+# The app screenshots under /petcrew, /snapsell, /candlepost and /demos are unhashed, and are
+# therefore left on the default ETag revalidation rather than an immutable year.
+
+/
+  Cache-Control: no-store
+
+/index.html
+  Cache-Control: no-store
+
+/assets/*
+  Cache-Control: public, max-age=31556952, immutable

@@ -1,0 +1,23 @@
+{
+  // Static-assets Worker serving ./dist. No `main` = assets only, so the Worker *script*
+  // bundle limits (3 MiB free / 10 MiB paid) do not apply to this site at all.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "bryanstudio-dev",
+  "compatibility_date": "2026-09-17",
+  "assets": {
+    "directory": "./dist",
+    // Serve index.html for any unmatched path so React Router deep links resolve,
+    // replacing server.js's express fallback middleware.
+    "not_found_handling": "single-page-application"
+  },
+  // Live hostnames. Cloudflare creates the proxied DNS record and the certificate itself; it
+  // refuses while a CNAME exists for the hostname, so the old DNS-only record pointing at
+  // ffouv0lm.up.railway.app was removed first (revert = recreate that CNAME, see
+  // /tmp/bryanstudio-dev-dns-revert.txt). The zone-level redirect rule that sends the apex to www
+  // fires before the Worker, and is not readable with this token - it survived the same cutover on
+  // my-site, where both hostnames stayed correct.
+  "routes": [
+    { "pattern": "www.bryanstudio.dev", "custom_domain": true },
+    { "pattern": "bryanstudio.dev", "custom_domain": true }
+  ]
+}
